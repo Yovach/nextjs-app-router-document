@@ -1,18 +1,27 @@
 {
+  "name": "reproduction-app",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "dotenv -c -- next dev",
+    "build": "dotenv -c -- next build",
+    "build:dev": "dotenv -c -- next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.5.4-canary.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "13.5.3",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.18",
-    "typescript": "5.2.2"
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "dotenv-cli": "^7.3.0",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }
